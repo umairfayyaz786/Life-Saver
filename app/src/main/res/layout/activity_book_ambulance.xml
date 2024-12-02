@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".User.BookAmbulance">
+
+    <TextView
+        android:id="@+id/where"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Where from?"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Select_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/where"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btnroundbg"
+        android:drawableLeft="@drawable/location"
+        android:paddingLeft="80dp"
+        android:paddingRight="90dp"
+        android:backgroundTint="@color/main_color"
+        android:gravity="center"
+        android:text="Where from?"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Select_location"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/splashlogo2" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="200dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/imageAmbulance"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/main_color" />
+
+    <TextView
+        android:id="@+id/ServiceAmbulance"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Uber Ambulance Services"
+        android:textColor="#949A9A" />
+
+    <TextView
+        android:id="@+id/savelifes"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ServiceAmbulance"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="Saving seconds to save lives"
+        android:textColor="@color/main_color"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@+id/savelifes"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:spinnerMode="dropdown" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/book_now"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Dark_blue"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/arrow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:text="@string/app_name"
+            android:drawableLeft="@drawable/booknow"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap here to book ambulance now"
+            android:layout_marginTop="100dp"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="10dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

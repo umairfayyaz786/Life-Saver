@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".User.TrackAmbulance">
+
+    <TextView
+        android:id="@+id/AmbulanceOnTheWay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Ambulance is on the way.."
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/trackAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/AmbulanceOnTheWay"
+        android:gravity="center"
+        android:text="Track your ambulance"
+        android:textColor="@color/Gray"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ConfirmBookingAmbulanceTrack"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/trackAmbulance"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/splashlogo2" />
+
+    <TextView
+        android:id="@+id/driverAllocated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ConfirmBookingAmbulanceTrack"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/check"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="Driver Allocated"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/sanitisedAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driverAllocated"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/check"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="Fully sanitised ambulance"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/numberplate"
+        android:layout_below="@id/sanitisedAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LHZ 1864"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/Traveller"
+        android:layout_below="@id/numberplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Force Traveller"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/phoneIcon"
+        android:layout_below="@id/Traveller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/callDriver"
+        android:layout_below="@id/phoneIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="call driver:  Mr.Ahmed"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_below="@id/callDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+923445987065"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/completePayment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/number"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btnroundbg"
+        android:backgroundTint="@color/main_color"
+        android:gravity="center"
+        android:text="Complete payment"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

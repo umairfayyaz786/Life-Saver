@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".User.PaymentDues">
+
+
+    <TextView
+        android:id="@+id/confirm_payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Confirm Payment"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/ambulanceFare"
+        android:layout_below="@+id/confirm_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your ambulance fare"
+        android:textSize="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/pkr1000"
+        android:layout_below="@+id/confirm_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 PKR"
+        android:textSize="18dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/line1000pkr"
+        android:layout_below="@+id/pkr1000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/Gray"/>
+
+    <TextView
+        android:id="@+id/tax"
+        android:layout_below="@+id/line1000pkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax"
+        android:textSize="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tax200"
+        android:layout_below="@+id/line1000pkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200 PKR"
+        android:textSize="18dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/line200pkr"
+        android:layout_below="@+id/tax200"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/Gray"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_below="@+id/line200pkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/totalPayment"
+        android:layout_below="@+id/line200pkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1200 PKR"
+        android:textSize="18dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_below="@+id/totalPayment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btnroundbg"
+        android:backgroundTint="@color/main_color"
+        android:gravity="center"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

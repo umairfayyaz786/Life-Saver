@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signups.SignUpForDriver">
+
+    <TextView
+        android:id="@+id/UberAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/uber_ambulance"
+        android:textSize="27sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_below="@+id/UberAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/UberService"
+        android:layout_below="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/uber_ambulance_services"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/username_for_signup_driver"
+        android:layout_below="@id/UberService"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/roundbackground"
+        android:hint="@string/enter_your_email_here"
+        android:textColorHint="#A19D9D"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/Email_for_signup_driver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/username_for_signup_driver"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundbackground"
+        android:hint="@string/enter_your_email_for_driverSignup"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A19D9D"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/Number_for_signup_driver"
+        android:layout_below="@id/Email_for_signup_driver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/roundbackground"
+        android:hint="@string/enter_phone_number_ForDriver"
+        android:textColorHint="#A19D9D"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/Password_for_signup_driver"
+        android:layout_below="@id/Number_for_signup_driver"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/roundbackground"
+        android:hint="@string/enter_your_password_here"
+        android:textColorHint="#A19D9D"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/DontHaveAccount"
+        android:layout_below="@id/Password_for_signup_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/CreateAccount"
+        android:layout_below="@id/DontHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:text="@string/login_for_driver_in_signup"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/SignUpForDriver"
+        android:layout_below="@+id/Password_for_signup_driver"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="240dp"
+        app:backgroundTint="@color/teal_200"
+        android:background="@drawable/btnroundbg"
+        android:text="@string/sign_up_for_driver"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

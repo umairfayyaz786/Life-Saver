@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Driver.AcceptRide">
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:drawableLeft="@drawable/user50"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:elevation="20dp"
+        android:padding="35dp"
+        android:paddingRight="50dp"
+        android:text="Hashir Ali"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Ride"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tt"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="39dp"
+        android:text="Accept Ride"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>

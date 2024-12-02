@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.DriverMap">
+
+    <fragment
+        android:id="@+id/driver_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <SearchView
+        android:id="@+id/drivermapSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:queryHint="Search.."
+        android:iconifiedByDefault="false"
+        android:background="@drawable/searchviewbg"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/driverCard"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#055798"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Details:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="start"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/detailname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr.Ahmad"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/detailnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+92345632467"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="start" />
+        <TextView
+            android:id="@+id/detailpickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pickup Location:"
+            android:layout_marginTop="82dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/detailloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Superior Gold Campus lahore"
+            android:layout_marginTop="102dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/completeride"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Complete Ride"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/btnroundbg"
+            android:padding="12dp"
+            android:backgroundTint="#FF9800"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="end" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

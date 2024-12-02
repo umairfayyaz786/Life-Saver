@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".User.RecipientActivity">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/close" />
+
+    <ImageView
+        android:id="@+id/done"
+        android:layout_below="@+id/close"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/donetick" />
+
+    <TextView
+        android:id="@+id/paymentDone"
+        android:layout_below="@id/done"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Payment Confirmed"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/Done1200PKR"
+        android:layout_below="@id/paymentDone"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="1200 PKR"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/finalDone"
+        android:layout_below="@id/Done1200PKR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Payment has been Confirmed"
+        android:layout_marginLeft="80dp"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
